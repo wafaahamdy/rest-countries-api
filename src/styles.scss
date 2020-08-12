@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&display=swap');
+
+/* font */
+$font-md :14px;
+$font-lg:16px;
+$font-family: 'Nunito Sans', sans-serif;
+
+/*
+:root {
+    --color-elements :  hsl(0, 0%, 100%)  ; //$dark-Blue 
+    --color-bg : hsl(0, 0%, 98%) ;  // $Dark-Blue2
+    --color-text : hsl(200, 15%, 8%) ; // $White
+    --color-text2 : hsl(0, 0%, 52%) ; //$White 
+  } */
+
+  :root{
+    --color-elements :hsl(0, 0%, 100%)   ;  
+    --color-bg : hsl(0, 0%, 98%);   
+    --color-text :hsl(200, 15%, 8%) ;  
+    --color-text2 : hsl(0, 0%, 52%) ;  
+  }
+
+  :root.dark{
+    --color-elements : hsl(209, 23%, 22%)  ;  
+    --color-bg : hsl(207, 26%, 17%);  // $Dark-Blue2
+    --color-text :hsl(0, 0%, 100%) ; // $White
+    --color-text2 : hsl(0, 0%, 52%) ; //$White 
+  }
+
+  
+
+
+  
+/* Darck Theme
+$dark-Blue : hsl(209, 23%, 22%)  ; //(Dark Mode Elements)
+$Dark-Blue2 : hsl(207, 26%, 17%) ; //(Dark Mode Background)
+
+ Light Theme 
+$light-text : hsl(200, 15%, 8%) ; //(Light Mode Text)
+$light-DarkGray : hsl(0, 0%, 52%) ;//(Light Mode Input)
+$Light-Gray : hsl(0, 0%, 98%) ; //(Light Mode Background)
+$White: hsl(0, 0%, 100%) ; //(Dark Mode Text & Light Mode Elements)
+*/
+
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+    font-family: $font-family;
+    font-size: $font-md;
+     
+}
+
