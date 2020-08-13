@@ -12,24 +12,17 @@ export class CountriesComponent implements OnInit {
   err = "" ;
   filter =  "" ;
   region = "" ;
-  mode=true;  //true =day , false = night
+
 
   constructor(private countriesService : CountriesService) { }
 
   ngOnInit(): void {
     this.countriesService.getAll()
     .subscribe (res=>this.countriesList = res ,
-      err=> this.err=err) ;
+      err=> this.err=err.message) ;
     
   }
 
-  toggleTheme(){
-    this.mode =!this.mode ;
-    if(!this.mode) //dark mode
-      document.documentElement.classList.add("dark");
-    else
-    document.documentElement.classList.remove("dark");
-  }
  
 
 }
